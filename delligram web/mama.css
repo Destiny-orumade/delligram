@@ -1,0 +1,114 @@
+ nav{
+    position: relative;
+}
+.nav-links{
+    background-color: rgb(223, 208, 189);
+    border: radius 3cm;
+    position: absolute;
+    padding: 8px;
+    width: 10%;
+    box-sizing: border-box ;
+    transform: translateY(-1cm)
+    transition: transform .5s;
+    visibility: hidden;
+    text-decoration:none;
+}
+   
+.nav-links :active{
+    display:block;
+    
+}
+.menu-toggle{
+    background-color: antiquewhite;
+    text-align: center;
+ 
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+    text-align: center;
+
+    li a {
+        display: flex
+        padding: 8cm;
+        text-decoration: none;
+        color(black)
+        background-color: white ;
+        text-align: center;
+
+
+
+        &:hover{
+            background:white
+
+        }
+    }
+}
+}
+@media{
+    nav-links{
+        display: ;
+        flex-direction: column;
+    }
+    #menu-toggle{
+        display: block;
+        background-color: wheat;
+        border: 2px;
+        color: antiquewhite;
+        font-size: 23px;
+        cursor: pointer;
+
+    }
+    .delligram{
+        text-align: center;
+    }
+    
+    
+}
+header{
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;
+}
+#hero{
+    text-align: center;
+    padding: auto;
+}
+#about{
+    text-align: center;
+    padding: auto;
+}
+#services{
+    text-align: center;
+    padding: auto;
+}
+#contact{
+    text-align: center;
+}
+#contact-form{
+    display: block;
+    display:inline-block;
+    inset-inline: 2px;
+    inline-size: 1px;
+    width:30% ;
+    
+}
+#portfolio{
+    text-align: center;
+    padding: auto;
+}
+footer{
+    text-align: center;
+}
+body{
+    background-color: crimson;
+    &:hover
+    position: relative;
+
+    &:hover .nav-links{
+        display: block;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
